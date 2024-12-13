@@ -1,0 +1,466 @@
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f7ea;
+    width: 100vw;
+    height: 10%;
+    color: #999585;
+    position: relative;
+}
+
+#navBar {
+    display: flex;
+    gap: 25px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+#navBar p:hover {
+    color: #6a451a;
+    cursor: pointer;
+}
+
+#contactUs {
+    background-color: #c19f5e;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 25px 0 25px 0;
+}
+
+#contactUs:hover {
+    cursor: pointer;
+    background-color: #6a451a;
+    color: #FFFFFF;
+}
+
+/* Navbar Collapse for Phones */
+#navBar.collapsed {
+    display: none;
+}
+
+#navMenuToggle {
+    display: none;
+}
+
+/* Hamburger Menu Icon */
+#navMenuToggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#landingPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing {
+    margin: 20px;
+    width: 95vw;
+    height: 85vh;
+    background-image: url(./lpbg.jpg);
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.headerText {
+    color: #FFFFFF;
+    font-size: 70px;
+    position: absolute;
+    top: 38vh;
+    left: 18vw;
+    word-wrap: break-word;
+}
+
+#landingHighlight {
+    color: #ADD8E6;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#infoButton {
+    position: absolute;
+    top: 55vh;
+    left: 40vw;
+    font-size: 40px;
+    padding: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #c19f5e;
+}
+
+#infoButton:hover {
+    background-color: #6a451a;
+    cursor: pointer;
+}
+
+#doomScrollingSection {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+
+#doomContent {
+    text-align: center;
+}
+
+#doomPoints {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.doomPoint {
+    flex: 1;
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#doomCalc {
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 1500px;
+    max-height: 300px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#doomTitle {
+    font-size: 50px;
+}
+
+#descriptiveadditions {
+    font-size: 25px;
+}
+
+#definition {
+    font-size: 25px;
+}
+
+#whySection, #harm, #howToStop {
+    font-size: 25px;
+}
+
+#whyTitle, #harmTitle, #stopTitle {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #999585;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #c19f5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+#effectsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    flex-direction: column;
+}
+
+#effectright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.effect {
+    flex: 1;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 20px;
+}
+
+#erow1, #erow2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+#effectTitle, #sectionwkshptitle {
+    font-size: 75px;
+    padding: 10px;
+}
+
+.goldSectionTitle {
+    color: #c19f5e;
+}
+
+#no5 {
+    max-width: 1500px;
+    width: 100%;
+}
+
+#effectsSection {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+}
+
+#workshopsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    flex-direction: column;
+}
+
+.workshopcontainer {
+    background-color: #f7f7f7;
+    max-width: 300px;
+    height: 550px;
+    border: #c19f5e solid 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.enrollBTN {
+    width: 100%;
+    font-size: 20px;
+}
+
+.enrollBTN:hover {
+    background-color: #6a451a;
+}
+
+.workshopIMG {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#sectionwkshptitle {
+    margin: 25px;
+}
+
+#wkshplower {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 25px;
+    gap: 50px;
+}
+
+.wkshpdscptn {
+    font-size: 12px;
+}
+
+.workshopTITLE, .wkshopdrtn, .wkshopfmt {
+    font-weight: bolder;
+}
+
+#contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    background-color: #c19f5e;
+    color: #f7f7f7;
+    font-size: 15px;
+    height: 150px;
+    border-radius: 50px 50px 0 0;
+}
+
+.contactTitle {
+    font-weight: bolder;
+}
+
+/* Media Queries for Phone Screens */
+/* Media Queries for Phone Screens */
+@media (max-width: 768px) {
+    /* Ensure everything stacks in a column */
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #landing, #doomScrollingSection, #effectsSection, #workshopsSection, #contactSection, #wkshplower, #erow1, #erow2, #landingPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #erow1, #erow2 {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #contactUs {
+        max-width: 150px;
+    }
+
+    #doomPoints, #effectright, .wkshplower {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .doomPoint, .effect, .workshopcontainer {
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+    }
+
+    #landing .headerText {
+        font-size: 50px;
+        left: 10vw;
+        top: 30vh;
+    }
+
+    #infoButton {
+        font-size: 30px;
+        top: 50vh;
+        left: 35vw;
+    }
+
+    #doomCalc {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .effect {
+        width: 100%;
+    }
+
+    .workshopcontainer {
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+
+    #contactSection {
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    #contactUs {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #navBar {
+        flex-direction: column;
+        gap: 10px;
+        display: none; /* Hide navbar by default */
+    }
+
+    #navMenuToggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Centering effects section */
+    #effectsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the items horizontally */
+        justify-content: center; /* Center the items vertically */
+    }
+
+    /* Ensuring the "Learn More" button is below the text */
+    #infoButton {
+        position: relative;
+        margin-top: 20px; /* Adds space below text */
+        display: none; /* Hide the "Learn More" button on mobile */
+    }
+}
+
+@media (max-width: 500px) {
+    /* Make sure no overflow of text */
+    .headerText, .doomPoint, .effect, .workshopcontainer, .result {
+        font-size: 16px; /* Adjust text size for smaller screens */
+        word-wrap: break-word;
+    }
+
+    /* Centering the Learn More button on smaller screens */
+    #infoButton {
+        margin-top: 20px; /* Add margin to ensure space between the text and the button */
+        font-size: 20px;
+        display: none; /* Hide the "Learn More" button on mobile */
+    }
+}

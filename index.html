@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather&Glow</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1 id="logoName">Gather&Glow</h1>
+        <div id="navBar">
+            <p onclick="scrollToSection('doomScrollingSection')">Doom Scrolling</p>
+            <p onclick="scrollToSection('effectsSection')">It's Effects</p>
+            <p onclick="scrollToSection('workshopsSection')">Workshops</p>
+        </div>               
+        <button onclick="scrollToSection('contactSection')" id="contactUs">Contact Us</button>
+    </nav>
+    <section id="landingPageSection">
+    <div id="landingPage">
+        <div id="landing">
+            <div>
+            <h1 class="headerText">Life is so much better<br><span id="landingHighlight">offline</span>.</h1>
+            </div>
+            <button onclick="scrollToSection('doomScrollingSection')" class="headerText" id="infoButton">Click to learn more</button>
+        </div>
+    </div>
+    </section>
+    <section id="doomScrollingSection">
+        <div id="doomContent">
+            <h1 id="doomTitle">Doomscrolling.</h1>
+            <h3 id="descriptiveadditions">What is it? Why does it happen? How to fix it?</h3>
+            <p id="definition">Doomscrolling is the habit of endlessly scrolling through negative news online,<br>
+                often leaving you anxious or stressed. It’s driven by our natural curiosity and fear of missing out but can harm mental health.</p>
+        </div>
+        <div id="doomPoints">
+            <div class="doomPoint" id="whySection">
+                <span id="whyTitle">Why It Happens</span><br>
+                Negativity Bias: We’re wired to focus on threats.<br>
+                FOMO: The need to stay updated on bad news.<br>
+                Algorithms: Platforms show sensational content to keep us engaged.
+            </div>
+            <div class="doomPoint" id="harm">
+                <span id="harmTitle">Why It’s Harmful</span><br>
+                Causes anxiety, stress, and poor sleep.<br>
+                Makes the world seem overwhelmingly negative.
+            </div>
+            <div class="doomPoint" id="howToStop">
+                <span id="stopTitle">How to Stop Doomscrolling</span><br>
+                Set Limits: Schedule specific times to check the news.<br>
+                Turn Off Notifications: Avoid constant interruptions.<br>
+                Follow Positivity: Curate feeds for balanced content.<br>
+                Practice Mindfulness: Meditate, journal, or spend time offline.
+            </div>
+        </div>
+        <div id="doomCalc">
+            <div class="container">
+                <h2>Doomscrolling Calculator</h2>
+                <p>Estimate your daily doomscrolling time:</p>
+                <input type="number" id="scrollSessions" placeholder="Number of doomscrolling sessions/day">
+                <input type="number" id="timePerSession" placeholder="Minutes spent per session">
+                <button onclick="calculateDoomscrolling()">Calculate</button>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+    </section>
+    <section id="effectsSection">
+        <div id="effectleft">
+            <h1 id="effectTitle">The Effects of <span class="goldSectionTitle">Doomscrolling</span>.</h1>
+        </div>
+        <div id="effectright">
+            <div id="erow1">
+            <div class="effect">
+                <h3>1. Heightened Anxiety and Stress</h3>
+                <p>
+                  Constant exposure to alarming news keeps your mind in a state of alert, triggering the fight-or-flight response.<br> 
+                  Over time, this can lead to chronic stress and an overwhelming sense of helplessness.
+                </p>
+              </div>
+              
+              <div class="effect">
+                <h3>2. Negative Impact on Mental Health</h3>
+                <p>
+                  Studies link doomscrolling to feelings of depression, loneliness, and even burnout.<br> 
+                  The cycle of consuming distressing information can fuel pessimism and a sense of dread about the world.
+                </p>
+              </div>
+            </div>
+            <div id="erow2">
+              <div class="effect">
+                <h3>3. Disrupted Sleep Patterns</h3>
+                <p>
+                  Late-night scrolling can interfere with your sleep, as blue light from screens suppresses melatonin and distressing<br> 
+                  content keeps your mind racing long after you’ve put down your device.
+                </p>
+              </div>
+              
+              <div class="effect">
+                <h3>4. Reduced Productivity and Focus</h3>
+                <p>
+                  Doomscrolling eats into your time, leaving you distracted and drained. The constant influx of negativity<br>  
+                  can sap your energy and make it harder to concentrate on meaningful tasks.
+                </p>
+              </div>
+            </div>
+              <div id="no5" class="effect">
+                <h3>5. A Narrowed Perspective</h3>
+                <p>
+                  When you’re stuck in the doomscrolling loop, it’s easy to lose sight of positive stories and diverse perspectives,<br>  
+                  which are crucial for a balanced understanding of the world.
+                </p>
+              </div>
+        </div>
+    </section>  
+    <section id="workshopsSection">
+        <div id="upper">
+            <h1 id="sectionwkshptitle">Our <span class="goldSectionTitle">Workshops</span>.</h1>
+        </div>
+        <div id="wkshplower">
+            <div class="workshopcontainer">
+                <img class="workshopIMG" src="./mindfulicon.png">
+                <div>
+                <h3 class="workshopTITLE">Mindful Scrolling: Recognize and Reset</h3>
+                <h5 class="workshopDESC">
+                    <span class="wkshpdscptn">Learn how to identify the triggers of doomscrolling and replace them with intentional habits.<br>
+                    This workshop equips you with practical techniques to regain control over your screen time.<br></span>
+                    <span class="wkshopdrtn">Duration:</span> 1 Hour<br>
+                    <span class="wkshopfmt">Format:</span> Online</h5>
+                </div>
+                <button class="enrollBTN">Try Out!</button>
+            </div>
+            <div class="workshopcontainer">
+                <img class="workshopIMG" src="./planicon.webp">
+                <div>
+                <h3 class="workshopTITLE">Creating a Digital Detox Plan</h3>
+                <h5 class="workshopDESC">
+                    <span class="wkshpdscptn">Build a personalized plan to reduce your dependence on digital media without feeling disconnected.<br>
+                        Explore strategies for setting boundaries, scheduling screen-free moments, and fostering meaningful offline activities.</span>
+                    <span class="wkshopdrtn">Duration:</span> 1.5 Hours<br>
+                    <span class="wkshopfmt">Format:</span> Online or In-Person</h5>
+                </div>
+                <button class="enrollBTN">Try Out!</button>
+            </div>
+            <div class="workshopcontainer">
+                <img class="workshopIMG" src="./hobbyicon.jpg">
+                <div>
+                <h3 class="workshopTITLE">Finding Joy Beyond the Scroll</h3>
+                <h5 class="workshopDESC">
+                    <span class="wkshpdscptn">Reignite your curiosity and creativity by discovering fulfilling alternatives to endless scrolling.<br>
+                        This interactive workshop guides you in exploring hobbies, engaging with your community, and practicing gratitude.<br></span>
+                    <span class="wkshopdrtn">Duration:</span> 2 Hours<br>
+                    <span class="wkshopfmt">Format:</span> In-Person</h5>
+                </div>
+                <button class="enrollBTN">Try Out!</button>
+            </div>
+            <div class="workshopcontainer">
+                <img class="workshopIMG" src="./mediicon.jpg">
+                <div>
+                <h3 class="workshopTITLE">Transforming Screen Time into Self-Care</h3>
+                <h5 class="workshopDESC">
+                    <span class="wkshpdscptn">Shift your relationship with technology by integrating mindfulness and wellness practices into your digital habits.<br>
+                        Learn how to curate positive content and set intentional goals for your screen time.<br></span>
+                    <span class="wkshopdrtn">Duration:</span> 1 Hour<br>
+                    <span class="wkshopfmt">Format:</span> Online</h5>
+                </div>
+                <button class="enrollBTN">Try Out!</button>
+            </div>
+        </div>
+    </section>  
+    <section id="contactSection">
+        <div>
+            <p>
+                <span class="contactTitle">Contact Us</span>:<br>
+                We’d love to hear from you!<br> 
+                Whether you have a question, feedback, or want to<br>
+                learn more about how Gather & Glow can help you<br>
+                break free from doomscrolling, our team is here to help.<br>
+            </p>
+        </div>
+        <div>
+            <p>
+                <span class="contactTitle">Reach Out to Us</span>:<br>
+                <span class="contactTitle">Email:</span> contact@gatherandglow.com<br>
+                <span class="contactTitle">Mailing Address:</span><br>
+                        Gather & Glow<br>
+                        6th of October<br>
+                        Gamal Abd El Nasser, 98765<br>
+            </p>
+        </div>
+        <div>
+            <p>
+                <span class="contactTitle">Stay Connected:</span><br>
+                Follow us on social media for updates, tips,<br> 
+                and inspiration:<br>
+                <span class="contactTitle">Instagram:</span> @gatherandglow.eg<br>
+            </p>
+        </div>
+    </section>
+    <script>
+        function calculateDoomscrolling() {
+            const sessions = parseInt(document.getElementById('scrollSessions').value, 10);
+            const timePerSession = parseInt(document.getElementById('timePerSession').value, 10);
+
+            if (isNaN(sessions) || isNaN(timePerSession) || sessions < 0 || timePerSession < 0) {
+                document.getElementById('result').textContent = "Please enter valid positive numbers.";
+                return;
+            }
+
+            const totalMinutes = sessions * timePerSession;
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+
+            document.getElementById('result').textContent = 
+                `You spend approximately ${hours} hours and ${minutes} minutes doomscrolling daily.`;
+        }
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+</body>
+</html>
